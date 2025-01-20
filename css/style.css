@@ -73,7 +73,7 @@ body{
 
 .hero{
     margin-top: 58px;
-    background: #1e252b00 url(/img/Illustration.svg) no-repeat right 50%/ 589px 802px;
+    background: #1e252b00 url('./img/Illustration.svg') no-repeat right 50%/ 589px 802px;
 
 }
 

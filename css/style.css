@@ -66,3 +66,86 @@ body{
 .login__button:hover{
     opacity: var(--hover-opacity);
 }
+
+
+/*?=========================== MAIN HERO ===========================*/
+
+
+.hero{
+    margin-top: 58px;
+    background: #1e252b00 url(/img/Illustration.svg) no-repeat right 50%/ 589px 802px;
+
+}
+
+.hero__inner {
+    display: flex;
+    flex-direction: column;
+    padding-top: 104px;
+}
+
+.hero__title {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 1.4;
+    color: #ffffffe6;
+    margin-bottom: 30px;
+}
+
+.hero__title span{
+    color: #ff6e30;;
+}
+
+.hero__text {
+    font-size: 18px;
+    line-height: 1.67;
+    color: rgba(255, 255, 255, 0.55);
+    max-width: 430px;
+    margin-bottom: 60px;
+}
+
+.search__form{
+    display: flex;
+    align-items: center;
+    width: 440px;
+    background: #283036;
+    margin-bottom: 110px;
+    border-radius: 15px;
+    padding: 8px 11px 8px 18px;
+}
+
+.search__form input{
+    background: #283036;
+    max-width: 200px;
+    width: 100%;
+    margin-left: 13px;
+}
+
+.search__form input::placeholder{
+    background: #283036;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.38);
+}
+
+.search__button{
+    margin-left: 45px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 8px;
+    width: 130px;
+    height: 48px;
+    background: #ff6e30;
+}
+
+.socials__list {
+    display: flex;
+    gap: 8px;
+}
+.socials__item {
+    transition: var(--transition);
+}
+.socials__item:hover {
+    opacity: var(--hover-opacity);
+}
+
+.socials__link {
+}

@@ -1,5 +1,68 @@
+:root{
+    --hover-opacity: .7;
+    --transition: all .5s;
+}
+
+
 body{
     background-color: #1E252B;
     color: #ffffff8c;
     font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1224px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/*?=========================== HEADER ===========================*/
+
+.header {
+    margin-top: 26px;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__nav {
+    display: flex;
+    gap: 50px;
+    font-weight: 500;
+}
+.header__nav-item{
+    transition: var(--transition);
+}
+
+.header__nav-item:hover{
+    opacity: var(--hover-opacity);
+}
+
+.header__login {
+    display: flex;
+    gap: 41px;
+    align-items: center;
+}
+
+.header__login-item:hover{
+    opacity: var(--hover-opacity);
+}
+.login__button {
+    font-weight: 600;
+    font-size: 16px;
+    color: #fdf5ff;
+
+    border-radius: 8px;
+    width: 118px;
+    height: 48px;
+    background: #ff6e30;
+    transition: var(--transition);
+}
+
+.login__button:hover{
+    opacity: var(--hover-opacity);
 }

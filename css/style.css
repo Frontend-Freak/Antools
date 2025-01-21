@@ -11,8 +11,14 @@ body{
 }
 
 .container {
-    max-width: 1224px;
+    max-width: 1254px;
+    padding: 0 15px;
     width: 100%;
+    margin: 0 auto;
+}
+
+.wrapper{
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -340,17 +346,16 @@ h3{
 /*?=========================== FOOTER ===========================*/
 
 
-.footer {
-    min-height: 350px;
-    width: 100%;
+.wrapper .footer {
     border-top: 0.50px solid rgba(255, 255, 255, 0.15);
-    width: 100vw;
-    height: 0px;
-    padding: 70px 0 98px;
 }
 
 .footer__inner{
     display: flex;
+    min-height: 350px;
+    width: 100%;
+    height: 0px;
+    padding: 70px 0 98px;
 }
 
 .footer__item{

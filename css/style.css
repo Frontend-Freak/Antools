@@ -16,6 +16,12 @@ body{
     margin: 0 auto;
 }
 
+h3{
+    font-weight: 500;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
 
 /*?=========================== HEADER ===========================*/
 
@@ -157,11 +163,16 @@ body{
     margin-top: 200px;
 }
 
+.tools__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .tools__title {
     font-weight: 500;
     font-size: 48px;
     line-height: 1.3;
-    text-align: center;
     color: rgba(255, 255, 255, 0.9);
     margin-bottom: 25px;
 }
@@ -173,7 +184,6 @@ body{
     text-align: center;
     color: rgba(255, 255, 255, 0.55);
     max-width: 390px;
-    margin: 0 auto;
 }
 
 .tools__grid {
@@ -193,6 +203,7 @@ body{
     padding: 33px;
     gap: 30px;
     transition: var(--transition);
+    position: relative;
 }
 
 .tools__grid-card:hover {
@@ -218,9 +229,6 @@ body{
     margin-left: 30px;
     gap: 8px;
     line-height: 1.5;
-    font-weight: 500;
-    font-size: 24px;
-    color: rgba(255, 255, 255, 0.9);
 }
 
 .tools__grid-card-title span{
@@ -272,4 +280,122 @@ body{
 .card__button:hover{
     background: #ff6e30;
     opacity: var(--hover-opacity);
+}
+
+.tools__more-button {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    width: 184px;
+    height: 64px;
+    background: #1e252b;
+    font-weight: 500;
+    font-size: 20px;
+    color: #ff6e30;
+    margin-top: 100px;
+    transition: var(--transition);
+}
+
+.tools__more-button:hover{
+    opacity: var(--hover-opacity);
+    width: 200px;
+    height: 80px;
+    margin-top: 88px;
+}
+
+
+/*?=========================== MAIN BRAND ===========================*/
+
+.brand {
+    margin: 200px 0;
+}
+
+.brand__inner {
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    padding: 55px 82px;
+    backdrop-filter: blur(50px);
+    background: rgba(44, 53, 61, 0.2);
+}
+
+.brand__title {
+    margin-bottom: 55px;
+    text-align: center;
+}
+.brand-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*?=========================== FOOTER ===========================*/
+
+
+.footer {
+    min-height: 350px;
+    width: 100%;
+    border-top: 0.50px solid rgba(255, 255, 255, 0.15);
+    width: 100vw;
+    height: 0px;
+    padding: 70px 0 98px;
+}
+
+.footer__inner{
+    display: flex;
+}
+
+.footer__item{
+    display: flex;
+    flex-direction: column;
+    max-width: 220px;
+    gap: 23px;
+}
+
+.footer__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 115px;
+    margin-left: 156px;
+}
+.footer__grid-item {
+}
+
+.copyright {
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 16px;
+color: rgba(255, 255, 255, 0.9);
+}
+.footer__item-text {
+    font-size: 14px;
+    line-height: 1.79;
+    color: rgba(255, 255, 255, 0.55);
+}
+.contact_us {
+}
+.footer__grid-title {
+    font-weight: 500;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 20px;
+}
+.footer__grid-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer__grid-link {
+}
+.categories {
+}
+.company__info {
 }

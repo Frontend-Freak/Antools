@@ -346,6 +346,7 @@ h3{
 
 
 .new__tools {
+    margin-bottom: 200px;
 }
 .new__tools-inner {
     display: flex;
@@ -403,7 +404,34 @@ h3{
 }
 .folder__button {
 }
-.card__button {
+
+
+.new__tools__grid-card:hover {
+    backdrop-filter: blur(50px);
+    background: #28303699;
+}
+
+.new__tools__grid-card button{
+    transition: var(--transition);
+}
+
+.new__tools__grid-card:hover rect{
+    fill: #28303699;
+}
+.new__card__button {
+    border-radius: 8px;
+    width: 106px;
+    height: 42px;
+    background: #1e252b;
+    color: rgba(255, 255, 255, 0.55);
+    margin-left: 43px;
+    font-size: 16px;
+    transition: var(--transition);
+}
+
+.new__card__button:hover{
+    background: #ff6e30;
+    opacity: var(--hover-opacity);
 }
 
 

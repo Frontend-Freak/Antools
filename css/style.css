@@ -84,6 +84,7 @@ h3{
 
 .login__button:hover{
     opacity: var(--hover-opacity);
+    transform: scale(1.2);
 }
 
 
@@ -167,6 +168,7 @@ h3{
 
 .socials__item:hover {
     opacity: var(--hover-opacity);
+    transform: scale(1.2);
 }
 
 
@@ -222,6 +224,7 @@ h3{
 .tools__grid-card:hover {
     backdrop-filter: blur(50px);
     background: #28303699;
+    transform: scale(1.1);
 }
 
 .tools__grid-card button{
@@ -293,6 +296,7 @@ h3{
 .card__button:hover{
     background: #ff6e30;
     opacity: var(--hover-opacity);
+    transform: scale(1.2);
 }
 
 .tools__more-button {
@@ -310,10 +314,7 @@ h3{
 
 .tools__more-button:hover{
     opacity: var(--hover-opacity);
-    width: 200px;
-    height: 80px;
-    margin-top: 88px;
-    font-size: 22px;
+    transform: scale(1.2);
 }
 
 
@@ -348,15 +349,16 @@ h3{
 .new__tools {
     margin-bottom: 200px;
 }
+
 .new__tools-inner {
     display: flex;
     gap: 197px;
 }
+
 .new__tools-info {
     min-width: 427px;
 }
-.new__tools-title {
-}
+
 .new__tools-text {
     max-width: 330px;
     font-weight: 500;
@@ -365,6 +367,7 @@ h3{
     color: rgba(255, 255, 255, 0.55);
     margin: 30px 0 60px;
 }
+
 .new__tools-button {
     font-weight: 600;
     font-size: 16px;
@@ -374,8 +377,12 @@ h3{
     background: #ff6e30;
     transition: var(--transition);
 }
-.new__tools-link {
+
+.new__tools-button:hover {
+    opacity: var(--hover-opacity);
+    transform: scale(1.2);
 }
+
 .new__tools-grid {
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
@@ -383,6 +390,7 @@ h3{
 .new__tools__grid-card {
     display: flex;
     flex-direction: column;
+    gap: 30px;
     border-radius: 15px;
     width: 288px;
     height: 284px;
@@ -392,23 +400,12 @@ h3{
     transition: var(--transition);
     position: relative;
 }
-.tools__grid-card-top {
-}
-.tools__grid-card-title {
-}
-.tools__grid-card-text {
-}
-.tools__grid-card-bottom {
-}
-.like__button {
-}
-.folder__button {
-}
-
 
 .new__tools__grid-card:hover {
     backdrop-filter: blur(50px);
     background: #28303699;
+    z-index: 1;
+    transform: scale(1.03);
 }
 
 .new__tools__grid-card button{
@@ -418,6 +415,7 @@ h3{
 .new__tools__grid-card:hover rect{
     fill: #28303699;
 }
+
 .new__card__button {
     border-radius: 8px;
     width: 106px;
@@ -432,6 +430,7 @@ h3{
 .new__card__button:hover{
     background: #ff6e30;
     opacity: var(--hover-opacity);
+    transform: scale(1.2);
 }
 
 
@@ -493,6 +492,6 @@ h3{
     gap: 10px;
 }
 
-.footer__grid-item:hover{
+.footer__grid-list-item:hover a{
     opacity: var(--hover-opacity);
 }

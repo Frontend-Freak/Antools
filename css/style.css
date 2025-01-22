@@ -564,11 +564,17 @@ h3{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 549px;
+    max-width: 530px;
     height: 64px;   
     background: #283036;
     padding: 8px 12px 8px 24px;
     border-radius: 15px;
+}
+
+.contact__form input{
+    background: #283036;
+    color: rgba(255, 255, 255, 0.38);
+    width: 333px;
 }
 
 .form__input::placeholder{
@@ -576,7 +582,6 @@ h3{
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 14px;
-    color: rgba(255, 255, 255, 0.38);
 }
 
 .contact__form-button {

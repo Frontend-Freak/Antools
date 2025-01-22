@@ -219,6 +219,19 @@ h3{
     gap: 30px;
     transition: var(--transition);
     position: relative;
+    overflow: hidden;
+}
+
+.tools__grid-card::before {
+    transition: var(--transition);
+}
+
+.tools__grid-card:hover::before {
+    content: url(../img/blur.svg);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    opacity: 0.6;
 }
 
 .tools__grid-card:hover {
@@ -322,6 +335,7 @@ h3{
 
 .brand {
     margin: 200px 0;
+    position: relative;
 }
 
 .brand__inner {
@@ -331,6 +345,15 @@ h3{
     padding: 55px 82px;
     backdrop-filter: blur(50px);
     background: rgba(44, 53, 61, 0.2);
+    overflow: hidden;
+}
+
+.brand__inner::before{
+    content: url(../img/blur2.svg);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0.5;
 }
 
 .brand__title {
@@ -387,6 +410,7 @@ h3{
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
 }
+
 .new__tools__grid-card {
     display: flex;
     flex-direction: column;
@@ -399,6 +423,15 @@ h3{
     gap: 30px;
     transition: var(--transition);
     position: relative;
+    overflow: hidden;
+}
+
+.new__tools__grid-card:hover::before {
+    content: url(../img/blur3.svg);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    opacity: 0.6;
 }
 
 .new__tools__grid-card:hover {
@@ -434,6 +467,69 @@ h3{
 }
 
 
+/*?=========================== TEAM ===========================*/
+
+.team {
+    margin-bottom: 250px;
+}
+
+.team .container{
+    align-items: center;
+}
+
+.team__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.carousel__item {
+    display: flex;
+    align-items: center;
+}
+
+.carousel__img {
+    width: 399px;
+    height: 492px;
+}
+
+.carousel__text {
+    margin-left: 57px;
+    max-width: 393px;
+    font-size: 14px;
+    line-height: 2.14;
+    letter-spacing: 0.01em;
+    color: rgba(255, 255, 255, 0.78);
+    position: relative;
+}
+
+.carousel__text::before{
+    content: url(../img/“.svg);
+    display: block;
+    position: absolute;
+    top: -55px;
+    left: -50px;
+    opacity: 0.3;
+}
+
+.carousel__bottom{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.carousel__arrow-button{
+    background: none;
+    transition: var(--transition);
+}
+
+.carousel__arrow-button:hover{
+    transform: scale(1.6);
+}
+
+.carousel__arrow-button:hover svg path{
+    stroke: #FF6E30;
+    stroke-width: 3;
+}
 
 
 

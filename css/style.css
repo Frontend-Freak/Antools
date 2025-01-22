@@ -59,6 +59,7 @@ h3{
 
 .header__nav-item:hover{
     opacity: var(--hover-opacity);
+    transform: scale(1.1);
 }
 
 .header__login {
@@ -70,11 +71,11 @@ h3{
 .header__login-item:hover{
     opacity: var(--hover-opacity);
 }
+
 .login__button {
     font-weight: 600;
     font-size: 16px;
     color: #fdf5ff;
-
     border-radius: 8px;
     width: 118px;
     height: 48px;
@@ -532,7 +533,61 @@ h3{
 }
 
 
+/*?=========================== CONTACT ===========================*/
 
+
+.contact{
+    margin-bottom: 240px;
+}
+
+.contact .container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-title {
+    margin-bottom: 25px;
+}
+
+.contact-text {
+    margin-bottom: 100px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.67;
+    color: rgba(255, 255, 255, 0.55);
+    max-width: 427px;
+    text-align: center;
+}
+
+.contact__form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 549px;
+    height: 64px;   
+    background: #283036;
+    padding: 8px 12px 8px 24px;
+    border-radius: 15px;
+}
+
+.form__input::placeholder{
+    background: #283036;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.38);
+}
+
+.contact__form-button {
+    border-radius: 8px;
+    width: 130px;
+    height: 48px;
+    background: #ff6e30;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+}
 
 
 /*?=========================== FOOTER ===========================*/

@@ -238,7 +238,7 @@ h3{
 .tools__grid-card:hover {
     backdrop-filter: blur(50px);
     background: #28303699;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .tools__grid-card button{
@@ -376,7 +376,8 @@ h3{
 
 .new__tools-inner {
     display: flex;
-    gap: 197px;
+    /* gap: 190px; */
+    justify-content: space-between;
 }
 
 .new__tools-info {
@@ -410,12 +411,12 @@ h3{
 .new__tools-grid {
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    gap: 20px;
 }
 
 .new__tools__grid-card {
     display: flex;
     flex-direction: column;
-    gap: 30px;
     border-radius: 15px;
     width: 288px;
     height: 284px;
@@ -439,7 +440,7 @@ h3{
     backdrop-filter: blur(50px);
     background: #28303699;
     z-index: 1;
-    transform: scale(1.03);
+    transform: scale(1.05);
 }
 
 .new__tools__grid-card button{

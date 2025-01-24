@@ -475,19 +475,84 @@ h3{
     margin-bottom: 250px;
 }
 
-.team .container{
-    align-items: center;
+
+.team {
+    position: relative;
 }
 
-.team__inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.team__swiper {
+    overflow: hidden;
 }
+
+.team__wrapper {
+    display: flex;
+}
+
+.team__slide {
+    min-width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.carousel__item {
+    text-align: center;
+}
+
+.carousel__img {
+    max-width: 100%;
+    height: auto;
+}
+
+.team__prev, .team__next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.team__prev {
+    left: 10px;
+}
+
+.team__next {
+    right: 10px;
+}
+
+.pagination__bullet {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.pagination__bullet.active{
+    background-color: #FF6E30;
+}
+
+.team__prev path, .team__next path{
+    stroke: #FF6E30;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.team__prev.disabled path, .team__next.disabled path{
+    stroke: #ccc;
+    cursor: not-allowed;
+}
+
+
 
 .carousel__item {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .carousel__img {
@@ -512,25 +577,6 @@ h3{
     top: -55px;
     left: -50px;
     opacity: 0.3;
-}
-
-.carousel__bottom{
-    text-align: center;
-    margin-top: 100px;
-}
-
-.carousel__arrow-button{
-    background: none;
-    transition: var(--transition);
-}
-
-.carousel__arrow-button:hover{
-    transform: scale(1.6);
-}
-
-.carousel__arrow-button:hover svg path{
-    stroke: #FF6E30;
-    stroke-width: 3;
 }
 
 

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <link rel="icon" href="./img/logo/logo.svg">
 </head>
 <body>
@@ -744,37 +745,52 @@
 
             <div class="team">
                 <div class="container">
-                    <div class="team__inner">
-                        <button class="carousel__arrow-button">
+                    <div class="team__swiper swiper">
+                        <button class="team__prev" type="button">
                             <svg width="16" height="28" viewBox="0 0 16 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M14 26L2 14L14 2" stroke="white" stroke-width="0.28" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
+                                <path d="M14 26L2 14L14 2" stroke="white" stroke-opacity="3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
                         </button>
-                            
-                        <div class="carousel__item">
-                            <img class="carousel__img" src="./img/Man.png" alt="">
-                            <p class="carousel__text">
-                                Incididunt cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do nulla velit labore occaecat do deserunt Lorem magna officia incididunt consectetur amet. Sunt consectetur veniam minim ex commodo sint non. Occaecat aute officia excepteur non laboris id qui ad.
-                            </p>
+
+                        <div class="team__wrapper swiper-wrapper">
+                            <div class="team__slide swiper-slide">
+                                <div class="carousel__item">
+                                    <img class="carousel__img" src="./img/Man.png" alt="">
+                                    <p class="carousel__text">
+                                        Incididunt cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do nulla velit labore occaecat do deserunt Lorem magna officia incididunt consectetur amet. Sunt consectetur veniam minim ex commodo sint non. Occaecat aute officia excepteur non laboris id qui ad.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="team__slide swiper-slide">
+                                <div class="carousel__item">
+                                    <img class="carousel__img" src="./img/Man.png" alt="">
+                                    <p class="carousel__text">
+                                        Incididunt cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do nulla velit labore occaecat do deserunt Lorem magna officia incididunt consectetur amet. Sunt consectetur veniam minim ex commodo sint non. Occaecat aute officia excepteur non laboris id qui ad.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="team__slide swiper-slide">
+                                <div class="carousel__item">
+                                    <img class="carousel__img" src="./img/Man.png" alt="">
+                                    <p class="carousel__text">
+                                        Incididunt cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do nulla velit labore occaecat do deserunt Lorem magna officia incididunt consectetur amet. Sunt consectetur veniam minim ex commodo sint non. Occaecat aute officia excepteur non laboris id qui ad.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <button class="carousel__arrow-button">
+                        <div class="team__pagination">
+                            <span class="pagination__bullet"></span>
+                            <span class="pagination__bullet"></span>
+                            <span class="pagination__bullet"></span>
+                        </div>
+                        
+                        <button class="team__next" type="button">
                             <svg width="16" height="28" viewBox="0 0 16 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M2 26L14 14L2 2" stroke="white" stroke-width="0.28" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
+                                <path d="M2 26L14 14L2 2" stroke="#FF6E30" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
                         </button>
-                            
                     </div>
-                    <div class="carousel__bottom">
-                        <svg width="44" height="6" viewBox="0 0 44 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="44" height="6" rx="3" fill="#283036"/>
-                        </svg>
-                        <svg width="44" height="6" viewBox="0 0 44 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="44" height="6" rx="3" fill="#ff6e30"/>
-                        </svg>
-                        <svg width="44" height="6" viewBox="0 0 44 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="44" height="6" rx="3" fill="#283036"/>
-                        </svg>
-                    </div>
+                    
                 </div>
             </div>
 
@@ -877,7 +893,7 @@
             </div>
         </footer>
     </div>
-
+    <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>

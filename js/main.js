@@ -23,3 +23,49 @@ buttons.forEach((button, index) => {
         }
     });
 });
+
+
+const swiper = new Swiper('.team__swiper', {
+    loop: false,
+
+    navigation: {
+        nextEl: '.team__next',
+        prevEl: '.team__prev',
+    },
+});
+
+const paginationBullets = document.querySelectorAll('.pagination__bullet');
+
+function updatePagination() {
+    paginationBullets.forEach((bullet, index) => {
+        bullet.classList.toggle('active', index === swiper.activeIndex);
+    });
+}
+
+updatePagination();
+swiper.on('slideChange', updatePagination);
+
+function updateNavigationButtons() {
+    const prevButton = document.querySelector('.team__prev');
+    const nextButton = document.querySelector('.team__next');
+
+    
+    if (swiper.isBeginning) {
+        prevButton.classList.add('disabled');
+    } else {
+        prevButton.classList.remove('disabled');
+    }
+
+    if (swiper.isEnd) {
+        nextButton.classList.add('disabled');
+    } else {
+        nextButton.classList.remove('disabled');
+    }
+}
+
+
+updateNavigationButtons();
+
+
+swiper.on('slideChange', updateNavigationButtons);
+

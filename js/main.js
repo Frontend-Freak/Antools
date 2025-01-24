@@ -1,3 +1,5 @@
+
+//ЛАЙКИ НА КАРТОЧКАХ
 const buttons = document.querySelectorAll('.like__button');
 
 function updateButtonStates() {
@@ -25,6 +27,8 @@ buttons.forEach((button, index) => {
 });
 
 
+//СВАЙПЕР
+
 const swiper = new Swiper('.team__swiper', {
     loop: false,
 
@@ -34,6 +38,8 @@ const swiper = new Swiper('.team__swiper', {
     },
 });
 
+
+//ПАГИНАЦИЯ
 const paginationBullets = document.querySelectorAll('.pagination__bullet');
 
 function updatePagination() {
@@ -44,6 +50,9 @@ function updatePagination() {
 
 updatePagination();
 swiper.on('slideChange', updatePagination);
+
+
+//КНОПОЧКИ
 
 function updateNavigationButtons() {
     const prevButton = document.querySelector('.team__prev');
@@ -63,9 +72,7 @@ function updateNavigationButtons() {
     }
 }
 
-
 updateNavigationButtons();
-
 
 swiper.on('slideChange', updateNavigationButtons);
 
